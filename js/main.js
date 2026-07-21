@@ -73,9 +73,26 @@
 		});
 	}
 
+	/* Scroll-reveal animations */
+	var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	var revealEls = document.querySelectorAll('.reveal');
+	if (revealEls.length && 'IntersectionObserver' in window && !reduceMotion) {
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+		revealEls.forEach(function (el) { observer.observe(el); });
+	} else {
+		revealEls.forEach(function (el) { el.classList.add('visible'); });
+	}
+
 	/* Typing headline (recreates the Elementor animated headline) */
 	var headline = document.querySelector('.typing-headline');
-	if (headline && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+	if (headline && !reduceMotion) {
 		var fullText = headline.getAttribute('data-text');
 		var textNode = document.createTextNode('');
 		var caret = document.createElement('span');
@@ -87,7 +104,8 @@
 		headline.appendChild(caret);
 
 		var i = 0;
-		(function type() {
+		var started = false;
+		function type() {
 			if (i <= fullText.length) {
 				textNode.nodeValue = fullText.slice(0, i);
 				i++;
@@ -95,6 +113,23 @@
 			} else {
 				setTimeout(function () { caret.remove(); }, 2000);
 			}
-		})();
+		}
+		function start() {
+			if (!started) {
+				started = true;
+				type();
+			}
+		}
+		if ('IntersectionObserver' in window) {
+			var headlineObserver = new IntersectionObserver(function (entries) {
+				if (entries[0].isIntersecting) {
+					start();
+					headlineObserver.disconnect();
+				}
+			}, { threshold: 0.4 });
+			headlineObserver.observe(headline);
+		} else {
+			start();
+		}
 	}
 })();

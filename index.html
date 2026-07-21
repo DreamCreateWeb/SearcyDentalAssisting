@@ -19,7 +19,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -60,6 +60,7 @@
 				<li><a href="#top" aria-current="page">Home</a></li>
 				<li><a href="#About">About the Program</a></li>
 				<li><a href="#Contact">Contact</a></li>
+				<li class="nav-cta"><a class="button button-small" href="#enroll">Enroll Now</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -69,39 +70,93 @@
 
 	<!-- Hero -->
 	<section class="hero">
-		<div class="hero-overlay"></div>
+		<div class="hero-media" aria-hidden="true"></div>
 		<div class="container hero-content">
-			<h1>Launch Your Dental Assisting Career in Searcy, AR</h1>
-			<a class="button" href="http://searcyfamilydental.com/">Contact us</a>
+			<p class="eyebrow eyebrow-light">Searcy School of Dental Assisting</p>
+			<h1>Launch Your Dental Assisting <span class="accent-text">Career</span> in Searcy, AR</h1>
 			<p class="hero-tagline">In just 10 weeks you can be trained and ready for employment!</p>
+			<div class="hero-actions">
+				<a class="button button-large" href="#enroll">Get Enrollment Info</a>
+				<a class="button button-large button-ghost" href="http://searcyfamilydental.com/">Contact us</a>
+			</div>
+			<ul class="hero-chips" aria-label="Program highlights">
+				<li>10-week program</li>
+				<li>Night classes</li>
+				<li>50-hour internship</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Stats band -->
+	<section class="stats" aria-label="Program at a glance">
+		<div class="container stats-grid">
+			<div class="stat reveal">
+				<span class="stat-number">10</span>
+				<span class="stat-label">weeks to job-ready</span>
+			</div>
+			<div class="stat reveal">
+				<span class="stat-number">80</span>
+				<span class="stat-label">hours of lecture &amp; lab</span>
+			</div>
+			<div class="stat reveal">
+				<span class="stat-number">50</span>
+				<span class="stat-label">hour real-world internship</span>
+			</div>
+			<div class="stat reveal">
+				<span class="stat-number">Small</span>
+				<span class="stat-label">class sizes, personal attention</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why dental assisting -->
+	<section class="why">
+		<div class="container why-grid">
+			<div class="why-copy reveal">
+				<p class="eyebrow">A career that works</p>
+				<h2>Why Dental Assisting is a Great Choice</h2>
+				<p>As a Dental Assistant, you can earn good money with a nice benefit package in many cases. It&#8217;s a RECESSION-PROOF job that allows you to work anywhere in the United States. Plus the demand for Dental Assistants is growing leaps and bounds. There are many reasons why it makes sense to think about becoming a Dental Assistant. Why not find out more?</p>
+				<a class="button" href="#enroll">Find out more</a>
+			</div>
+			<div class="why-media reveal">
+				<img src="assets/images/dental-assistants-in-searcy.jpg" alt="Dental assistants in Searcy" loading="lazy" width="1080" height="1440">
+			</div>
 		</div>
 	</section>
 
 	<!-- Photo gallery -->
 	<section class="gallery">
 		<div class="container">
-			<div class="gallery-grid">
-				<div class="gallery-col">
-					<img src="assets/images/dental-assistants-in-searcy.jpg" alt="Dental assistants in Searcy" loading="lazy" width="1080" height="1440">
-					<img src="assets/images/best-searcy-dental-assistant-school.jpg" alt="Best Searcy dental assistant school graduates" loading="lazy" width="1024" height="693">
-				</div>
-				<div class="gallery-col">
-					<img src="assets/images/student-reviews.jpg" alt="Searcy School of Dental Assisting student reviews" loading="lazy" width="1080" height="1440">
-					<img src="assets/images/dentist-assistant-school-searcy-ar.jpg" alt="Dentist assistant school in Searcy, AR" loading="lazy" width="1024" height="945">
-				</div>
+			<div class="gallery-head reveal">
+				<p class="eyebrow">Our graduates</p>
+				<h2>Real Students. Real Results.</h2>
 			</div>
-			<div class="why-choice">
-				<h3>Why Dental Assisting is a Great Choice</h3>
-				<p>As a Dental Assistant, you can earn good money with a nice benefit package in many cases. It&#8217;s a RECESSION-PROOF job that allows you to work anywhere in the United States. Plus the demand for Dental Assistants is growing leaps and bounds. There are many reasons why it makes sense to think about becoming a Dental Assistant. Why not find out more?</p>
+			<div class="gallery-grid">
+				<figure class="gallery-item wide reveal">
+					<img src="assets/images/best-searcy-dental-assistant-school.jpg" alt="Best Searcy dental assistant school graduates" loading="lazy" width="1024" height="693">
+				</figure>
+				<figure class="gallery-item reveal">
+					<img src="assets/images/student-reviews.jpg" alt="Searcy School of Dental Assisting student reviews" loading="lazy" width="1080" height="1440">
+				</figure>
+				<figure class="gallery-item reveal">
+					<img src="assets/images/dentist-assistant-school-searcy-ar.jpg" alt="Dentist assistant school in Searcy, AR" loading="lazy" width="1024" height="945">
+				</figure>
 			</div>
 		</div>
 	</section>
 
 	<!-- Enrollment form -->
-	<section class="enroll">
-		<div class="container enroll-inner">
-			<h3 class="typing-headline" data-text="Dental Assistant Program Info &amp; Enrollment Form">Dental Assistant Program Info &amp; Enrollment Form</h3>
-			<form class="site-form" name="Enrollment Agreement" method="post" data-form="enrollment">
+	<section class="enroll" id="enroll">
+		<div class="container enroll-grid">
+			<div class="enroll-copy reveal">
+				<p class="eyebrow eyebrow-light">Get started</p>
+				<h2 class="typing-headline" data-text="Dental Assistant Program Info &amp; Enrollment Form">Dental Assistant Program Info &amp; Enrollment Form</h2>
+				<ul class="check-list">
+					<li>Flexible payment plans available.</li>
+					<li>Class size is limited and spots go fast.</li>
+				</ul>
+			</div>
+			<form class="site-form form-card reveal" name="Enrollment Agreement" method="post" data-form="enrollment">
 				<div class="field">
 					<label for="enroll-name">Name</label>
 					<input type="text" name="name" id="enroll-name" placeholder="Name" autocomplete="name">
@@ -113,37 +168,43 @@
 				<button type="submit" class="button button-block">Enrollment Info</button>
 				<p class="form-status" role="status" aria-live="polite"></p>
 			</form>
-			<div class="enroll-notes">
-				<h5>Flexible payment plans available.</h5>
-				<h5>Class size is limited and spots go fast.</h5>
-			</div>
 		</div>
 	</section>
 
 	<!-- A day in the life -->
 	<section class="day-in-life">
 		<div class="container">
-			<p class="section-kicker">A Day in the Life of a Dental Assistant</p>
-			<h3 class="section-title">What Dental Assistants Do</h3>
+			<div class="section-head reveal">
+				<p class="eyebrow">A Day in the Life of a Dental Assistant</p>
+				<h2>What Dental Assistants Do</h2>
+			</div>
 			<div class="feature-grid">
-				<div class="feature">
-					<img src="assets/images/logo-icon.png" alt="Searcy dental assisting school logo" loading="lazy" width="50" height="50">
-					<h4>Engaging with Patients</h4>
+				<div class="feature reveal">
+					<span class="feature-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg>
+					</span>
+					<h3>Engaging with Patients</h3>
 					<p>You'll have friendly chats with patients, addressing their concerns and ensuring they feel comfortable.</p>
 				</div>
-				<div class="feature">
-					<img src="assets/images/logo-icon.png" alt="Searcy dental assisting school logo" loading="lazy" width="50" height="50">
-					<h4>Handling Office Admin Tasks</h4>
+				<div class="feature reveal">
+					<span class="feature-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="4" rx="1"/><path d="M17 5h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="M8 12h8M8 16h6"/></svg>
+					</span>
+					<h3>Handling Office Admin Tasks</h3>
 					<p>Alongside patient care, you'll take care of essential administrative duties that keep the practice running smoothly.</p>
 				</div>
-				<div class="feature">
-					<img src="assets/images/logo-icon.png" alt="Searcy dental assisting school logo" loading="lazy" width="50" height="50">
-					<h4>Assisting Dentists &amp; Hygenists</h4>
+				<div class="feature reveal">
+					<span class="feature-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2.5 0-3 1.5-5 1.5S4 3.6 4 6c0 4 1.5 6 2.5 10.5.4 1.8.8 4.5 2.2 4.5 1.6 0 .8-4 3.3-4s1.7 4 3.3 4c1.4 0 1.8-2.7 2.2-4.5C18.5 12 20 10 20 6c0-2.4-1-3-3-3s-2.5 1.5-5 1.5z" transform="translate(0 -1.5)"/></svg>
+					</span>
+					<h3>Assisting Dentists &amp; Hygenists</h3>
 					<p>Working closely with dentists, you'll support them during procedures like fillings, extractions, and more.</p>
 				</div>
-				<div class="feature">
-					<img src="assets/images/logo-icon.png" alt="Searcy dental assisting school logo" loading="lazy" width="50" height="50">
-					<h4>Taking Dental Impressions</h4>
+				<div class="feature reveal">
+					<span class="feature-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 15v2M12 13v4M16 15v2"/></svg>
+					</span>
+					<h3>Taking Dental Impressions</h3>
 					<p>You'll become skilled at taking dental impressions, an important part of the patient's treatment process.</p>
 				</div>
 			</div>
@@ -153,28 +214,34 @@
 	<!-- About the program -->
 	<section class="program">
 		<div id="About" class="anchor-offset"></div>
-		<div class="container">
-			<h4 class="section-kicker">Our Dental Assisting Program</h4>
-			<h5 class="program-intro">To become a Dental Assistant, you have to get the right training. And that&#8217;s exactly what we can provide you. Over three years went into developing our Dental Assisting curriculum. We looked at all of the other available programs, took what worked best, removed the filler, and improved on the program.</h5>
+		<div class="container reveal">
+			<p class="eyebrow">Our Dental Assisting Program</p>
+			<h2>Built From the Best. Without the Filler.</h2>
+			<p class="program-intro">To become a Dental Assistant, you have to get the right training. And that&#8217;s exactly what we can provide you. Over three years went into developing our Dental Assisting curriculum. We looked at all of the other available programs, took what worked best, removed the filler, and improved on the program.</p>
 		</div>
 	</section>
 
 	<!-- Comparison -->
 	<section class="comparison">
 		<div class="container comparison-grid">
-			<div class="comparison-col">
+			<div class="comparison-col us reveal">
+				<span class="badge">The smart choice</span>
 				<h3>Searcy Dental Assisting School</h3>
-				<p>We can train you in <strong>10 short weeks with 80 hours of lecture and lab at a local dental office.</strong></p>
-				<p>Our <strong>classes are at night</strong>, which makes them more convenient than many other programs.</p>
-				<p>With our accelerated program you&#8217;ll get your hands-on training in absolutely all aspects of Dental Assisting. In fact you&#8217;ll get real chair side experience and a <strong>50-hour internship with a practicing dentist!</strong></p>
-				<p>With our program you&#8217;ll get personal attention because our <strong>classes are limited.</strong></p>
+				<ul class="compare-list compare-yes">
+					<li>We can train you in <strong>10 short weeks with 80 hours of lecture and lab at a local dental office.</strong></li>
+					<li>Our <strong>classes are at night</strong>, which makes them more convenient than many other programs.</li>
+					<li>With our accelerated program you&#8217;ll get your hands-on training in absolutely all aspects of Dental Assisting. In fact you&#8217;ll get real chair side experience and a <strong>50-hour internship with a practicing dentist!</strong></li>
+					<li>With our program you&#8217;ll get personal attention because our <strong>classes are limited.</strong></li>
+				</ul>
 			</div>
-			<div class="comparison-col">
+			<div class="comparison-col them reveal">
 				<h3>Other Dental Assistant Schools</h3>
-				<p>For the same experience, you could be spending an <strong>entire year with other programs!</strong></p>
-				<p><strong>Other programs offer mostly lecture-based training</strong> with limited hands-on time, which leaves graduates unprepared for the job market.</p>
-				<p>In other programs, instructors are limited in the amount of attention they can give to a class of <strong>30 or more students.</strong></p>
-				<p>The choice is clear- contact <strong>Searcy Dental Assisting School</strong> to enroll in the best local program to learn the kind of experience that will put you ahead of your peers. This means you&#8217;ll graduate with the confidence, skills and &#8220;know-how&#8221; to excel in your new career.</p>
+				<ul class="compare-list compare-no">
+					<li>For the same experience, you could be spending an <strong>entire year with other programs!</strong></li>
+					<li><strong>Other programs offer mostly lecture-based training</strong> with limited hands-on time, which leaves graduates unprepared for the job market.</li>
+					<li>In other programs, instructors are limited in the amount of attention they can give to a class of <strong>30 or more students.</strong></li>
+				</ul>
+				<p class="comparison-close">The choice is clear- contact <strong>Searcy Dental Assisting School</strong> to enroll in the best local program to learn the kind of experience that will put you ahead of your peers. This means you&#8217;ll graduate with the confidence, skills and &#8220;know-how&#8221; to excel in your new career.</p>
 			</div>
 		</div>
 	</section>
@@ -183,11 +250,26 @@
 	<section class="contact">
 		<div id="Contact" class="anchor-offset"></div>
 		<div class="container contact-grid">
-			<div class="contact-copy">
-				<h3>Seize the Moment and Get Trained for this Exciting <span class="highlight-circle">New Career</span></h3>
+			<div class="contact-copy reveal">
+				<p class="eyebrow eyebrow-light">Contact</p>
+				<h2>Seize the Moment and Get Trained for this Exciting <span class="highlight-marker">New Career</span></h2>
 				<p>Reach out with the form if you have questions about our Searcy dental assisting program.</p>
+				<ul class="contact-details">
+					<li>
+						<span class="contact-icon" aria-hidden="true">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						</span>
+						<a href="tel:+15012030120">(501) 203-0120</a>
+					</li>
+					<li>
+						<span class="contact-icon" aria-hidden="true">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						</span>
+						<span>1639 E. Beebe Capps Expy. Searcy, AR 72143</span>
+					</li>
+				</ul>
 			</div>
-			<form class="site-form" name="Website Inquiry" method="post" data-form="contact">
+			<form class="site-form form-card reveal" name="Website Inquiry" method="post" data-form="contact">
 				<div class="field">
 					<label for="contact-name">Name</label>
 					<input type="text" name="name" id="contact-name" placeholder="Name" autocomplete="name">
@@ -214,8 +296,9 @@
 
 <footer class="site-footer">
 	<div class="container footer-inner">
-		<div class="footer-logo">
+		<div class="footer-brand">
 			<img src="assets/images/logo-icon.png" alt="Searcy dental assisting school logo" loading="lazy" width="50" height="50">
+			<p>Train for a recession-proof career in 10 weeks — right here in Searcy.</p>
 		</div>
 		<ul class="footer-contact">
 			<li><a href="tel:+15012030120">(501) 203-0120</a></li>
@@ -223,7 +306,7 @@
 		</ul>
 		<div class="footer-social">
 			<a href="https://www.facebook.com/searcyschoolofdentalassisting/" target="_blank" rel="noopener" aria-label="Facebook">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="14" height="22" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="12" height="19" fill="currentColor" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
 			</a>
 		</div>
 	</div>

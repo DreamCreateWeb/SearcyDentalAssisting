@@ -6,10 +6,11 @@ One-page website for Searcy School of Dental Assisting (searcydentalassistingsch
 
 The original site ran WordPress + Elementor Pro + Genesis Block Theme. This rebuild is dependency-free static HTML/CSS/JS — nothing to update, patch, or get hacked; it can be hosted anywhere (Netlify, Vercel, GitHub Pages, any shared host).
 
-- All page content, section order, and copy are preserved verbatim from the archived site.
+- All page copy and section content are preserved verbatim from the archived site; the visual design was modernized (new typography, navy/blue palette, card layouts, stat band, scroll-reveal animations).
 - All original images were recovered from the Wayback Machine (`assets/images/`).
 - The hero background image (`Care-Services.png`) was hosted on a wpengine staging domain that was never archived, so the hero now uses one of the recovered school photos with a dark overlay.
-- The Elementor "typing" headline animation over the enrollment form is recreated in vanilla JS (`js/main.js`), and respects `prefers-reduced-motion`.
+- The Elementor "typing" headline animation over the enrollment form is recreated in vanilla JS (`js/main.js`); all animations respect `prefers-reduced-motion`.
+- Fonts: Plus Jakarta Sans (headings) + Inter (body) via Google Fonts. Brand accent remains `#0072e5`.
 
 ## Structure
 
