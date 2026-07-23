@@ -829,6 +829,34 @@ a {
 }
 
 /* --------------------------------------------------------------------------
+   Commitment to the craft
+   -------------------------------------------------------------------------- */
+
+.commitment {
+	background: var(--sky-tint);
+	padding: 96px 0;
+}
+
+.commitment-inner {
+	max-width: 780px;
+	text-align: center;
+}
+
+.commitment-inner h2 {
+	margin-bottom: 24px;
+}
+
+.commitment-inner p:not(.eyebrow) {
+	font-size: 18px;
+	line-height: 1.8;
+	color: var(--text-muted);
+}
+
+.commitment-inner p strong {
+	color: var(--text);
+}
+
+/* --------------------------------------------------------------------------
    Contact
    -------------------------------------------------------------------------- */
 
