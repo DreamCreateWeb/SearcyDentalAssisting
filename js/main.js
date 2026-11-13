@@ -51,7 +51,11 @@
 				status.textContent = 'Opening your email app… or call us at (501) 203-0120.';
 				status.className = 'form-status success';
 			} else {
-				status.textContent = 'Please call us at (501) 203-0120 or visit searcyfamilydental.com to get in touch.';
+				if (form.getAttribute('data-form') === 'enrollment') {
+					status.innerHTML = 'Ready to enroll? <a href="assets/docs/enrollment-agreement.pdf" target="_blank" rel="noopener">Download the Enrollment Agreement (PDF)</a>. Questions? Call (501) 203-0120.';
+				} else {
+					status.textContent = 'Please call us at (501) 203-0120 or visit searcyfamilydental.com to get in touch.';
+				}
 				status.className = 'form-status success';
 			}
 		});

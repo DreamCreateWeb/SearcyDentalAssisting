@@ -19,6 +19,7 @@ index.html          — the whole site (one page)
 css/style.css       — all styles
 js/main.js          — mobile menu, typing headline, form handling
 assets/images/      — images recovered from the Wayback Machine
+assets/docs/        — enrollment agreement PDF (converted from the client's Word file; replace the PDF to update it)
 ```
 
 ## TODO before launch
